@@ -52,9 +52,16 @@ property contains a value that can be used in other declarations using the var (
 --z-tooltip: 10;
 --z-fixed: 100;
 --z-modal: 1000;
-
-
-
-
-
+}
+/*-----font size for large devices-----*/
+@media screen and (min-width: 968px) {
+   :root {
+        --big-font-size: 3rem;
+        --hi-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
 }
