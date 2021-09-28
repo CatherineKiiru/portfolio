@@ -3,10 +3,10 @@
 :root{
     --header-height: 3rem;
 
-/*------Colors. Hue, saturation, lightness(HSL) color modes.------ */
+/*===== COLORS, HUE, SATURATION, LIGHTNESS (HSL) COLOR MODES======*/
 
 /*This are CSS custom properties
-or CSS variables that contain values that can be reused referenced in different 
+or CSS variables that contain values that can be reused or referenced in different 
 sections of a website. CSS custom properties are prefixed with a double hyphen-- meaning the
 property contains a value that can be used in other declarations using the var () function*/ 
     
@@ -22,7 +22,8 @@ property contains a value that can be used in other declarations using the var (
     --body-color: hsl(var(--hue-color), 60%, 99%);
     --container-color: #FFF;
 
-/*------Font and typography------*/
+/*==================FONT & TYPOGRAPHY=====================*/
+
     /*.5rem = 8px, 1rem = 16px, 1.5rem = 24px*/
 
     --body-font: 'Poppins', sans-serif;
@@ -69,7 +70,9 @@ property contains a value that can be used in other declarations using the var (
 
 /*------ Button dark/light ---------*/
 
-/*---------------Base --------------*/
+
+
+/*==================== BASE =========================-*/
 *{
     box-sizing: border-box;
     padding: 0;
@@ -106,7 +109,7 @@ img{
     height: auto;
 }
 
-/*------Reusable CSS classes -------*/
+/*=================== RESUSABLE CSS CLASSES =================*/
 .section{
     padding: 2rem 0 4rem;
 }
@@ -126,7 +129,7 @@ img{
     text-align: center;
 }
 
-/*--------------Layout -------------*/
+/*==================== LAYOUT ========================*/
 .container{
     max-width: 768px;
     margin-left: var(--mb-1-5);
@@ -138,7 +141,59 @@ img{
     gap: 1.5rem;
 }
 
-/*----------Nav---------------*/
+.header{
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+}
+/*===============NAVIGATION BAR ======================*/
+.nav{
+    max-width: 968px;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_logo,
+.nav_toggle{
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+.nav_logo:hover{
+    color: var(--first-color);
+    
+}
+
+.nav_toggle{
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.nav_toggle:hover{
+    color: var(--first-color);
+}
+
+@media screen and (max-width: 767px){
+    .nav_menu{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--body-color);
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+        border-radius: 1.5rem 1.5rem 0 0;
+        transition: .3s;
+    
+    }
+}
+
+
 /*Show menu*/
 /*Active link*/
 /* change background header */
