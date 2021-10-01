@@ -1,26 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap ');
 
 :root{
     --header-height: 3rem;
 
-/*===== COLORS, HUE, SATURATION, LIGHTNESS (HSL) COLOR MODES======*/
+/*==================== COLORS ===================== */
 
-/*This are CSS custom properties
-or CSS variables that contain values that can be reused or referenced in different 
-sections of a website. CSS custom properties are prefixed with a double hyphen-- meaning the
-property contains a value that can be used in other declarations using the var () function*/ 
+/* HSL color modes  
+i.e hue, saturation, lightness (HSL) color modes
+
+HSL are CSS custom properties or CSS variables that contain values that can be reused or 
+referenced in different sections of a website. CSS custom properties are prefixed with a double hyphen-- 
+meaning the property contains a value that can be used in other declarations using the var () function*/ 
+
+
+/* change favorite color:  */
+
+--hue-color: 250; /* purple 250, green 145, blue 230, pink 340 */
+
     
-    --hue-color: 250;
-    --first-color: hsl(250, 69%, 61%);
-    --first-color-second: hsl(var(--hue-color), 92%, 85%);
-    --first-color-alt: hsl(var(--hue-color), 57%, 53%);
-    --first-color-lighter: hsl(var(--hue-color), 8%, 15%);
-    --title-color: hsl(var(--hue-color), 8%, 15%);
-    --text-color: hsl(var(--hue-color), 8%, 45%);
-    --text-color-light: hsl(var(--hue-color), 8%, 65%);
-    --input-color: hsl(var(--hue-color),70%, 96%);
-    --body-color: hsl(var(--hue-color), 60%, 99%);
-    --container-color: #FFF;
+--first-color: hsl(var(--hue-color), 69%, 61%);
+--first-color-second: hsl(var(--hue-color), 92%, 85%);
+--first-color-alt: hsl(var(--hue-color), 57%, 53%);
+--first-color-lighter: hsl(var(--hue-color), 8%, 15%);
+--title-color: hsl(var(--hue-color), 8%, 15%);
+--text-color: hsl(var(--hue-color), 8%, 45%);
+--text-color-light: hsl(var(--hue-color), 8%, 65%);
+--input-color: hsl(var(--hue-color),70%, 96%);
+--body-color: hsl(var(--hue-color), 60%, 99%);
+--container-color: #FFF;
 
 /*==================FONT & TYPOGRAPHY=====================*/
 
@@ -125,7 +132,7 @@ img{
     margin-bottom: var(--mb-3);
 }
 
-.section-title,
+.section_title,
 .section_subtitle{
     text-align: center;
 }
@@ -234,6 +241,121 @@ img{
 .show-menu{
     bottom: 0;
 }
+/* ========================== HOME ======================== */
+ .home_container{
+     gap: 1rem;
+ }
+
+ .home_content{
+     grid-template-columns: .50fr 3fr;
+     padding-top: 3.5rem;
+     align-items: center;
+ }
+
+ .home_social{
+     display: grid;
+     grid-template-columns: max-content;
+     row-gap: 1rem;
+ }
+
+ .home_social-icon{
+     font-size: 1.50rem; /* original size was 1.25 rem. Also changes size in html to la-lg for all social icons*/
+     color: var(--first-color);
+ }
+
+ .home_social-icon:hover{
+     color: var(--first-color-alt);
+ }
+
+ .home_blob{
+     width: 250px; /* original size was 200px*/
+     fill: var(--first-color);
+ }
+
+ .home_blob-img{
+     width: 120px; /* original size was 150 px*/
+ }
+
+ .home_data{
+     grid-column: 1/3;
+ }
+
+ .home_title{
+     font-size: var(--big-font-size);
+     
+ }
+
+ .home_subtitle{
+     font-size: var(--h3-font-size);
+     color: var(--text-color);
+     font-weight: var(--font-medium);
+     margin-bottom: var(--mb-0-75);
+ }
+
+ .home_description{
+     margin-bottom: var(--mb-2);
+ }
+
+ .home_scroll{
+     display: none;
+ } 
+
+ .home_scroll-button{
+     color: var(--first-color);
+     transition: .3s;
+ }
+
+ .home_scroll-button:hover{
+     transform: translateY(0.25rem);
+ }
+
+ .home_scroll-mouse{
+     font-size: 2rem;
+ }
+
+ .home_scroll-name{
+     font-size: var(--small-font-size);
+     color: var(--title-color);
+     font-weight: var(--font-medium);
+     margin-right: var(--mb-0-25);
+ }
+
+ .home_scroll-arrow{
+     font-size: 1.25rem;
+ }
+
+ /* ================= BUTTONS ======================== */
+ .button{
+     display: inline-block;
+     background-color: var(--first-color);
+     color: #FFF;
+     padding: 1rem;
+     border-radius: .5rem;
+     font-weight: var(--font-medium);
+ }
+
+ .button:hover{
+     background-color: var(--first-color-alt);
+ }
+
+ .button_icon{
+     font-size: 1.25rem;
+     margin-left: var(--mb-0-5);
+     transition: .3s;
+ }
+
+ .button--flex{
+     display: inline-flex;
+     align-items: center;
+
+ }
+
+
+
+
+
+
+
 
 /*Active link*/
 /* change background header */

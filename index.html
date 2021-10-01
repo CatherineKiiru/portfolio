@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!--=================== UNICONS =============================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     
     <!--=================== SWIPER CSS =============================-->
@@ -27,6 +28,7 @@
            <ul class="nav_list grid">
                 <li class="nav_item">
                     <a href="#home" class="nav_link">
+                        
                         <i class="las la-home la-lg nav_icon"></i> Home
                     </a>
                 </li>
@@ -84,46 +86,92 @@
         <div class="home_content grid">
             <div class="home_social">
                 <a href="https://www.linkedin.com/in/catherine-kiiru-47b2688b/" target="_blank" class="home_social-icon">
-                    <i class="lab la-linkedin-in"></i>
+                    <i class="lab la-linkedin-in la-lg"></i>
                 </a>
 
                 <a href="https://github.com/CatherineKiiru" target="_blank" class="home_social-icon">
-                    <i class="lab la-github"></i>
+                    <i class="lab la-github la-lg"></i>
                 </a>
 
                 <a href="https://twitter.com/home" target="_blank" class="home_social-icon">
-                    <i class="lab la-twitter"></i>
+                    <i class="lab la-twitter la-lg"></i>
                 </a>
             </div>
 
             <div class="home_img">
                 <svg class="home_blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                     <mask id="mask0" mask-type="alpha">
-                      <path fill="#000000" d="M50.1,-63.3C60.7,-50.8,62.2,-31,62,-13.7C61.8,3.7,60,18.6,53.6,32.2C47.2,45.7,36.4,57.8,21.2,67.2C6.1,76.5,-13.3,83.1,-28.7,77.9C-44.2,72.7,-55.8,55.8,-66.6,38C-77.5,20.2,-87.7,1.5,-84.2,-14.3C-80.7,-30,-63.6,-42.7,-47.3,-54.2C-31,-65.6,-15.5,-75.8,2.1,-78.3C19.8,-80.8,39.5,-75.7,50.1,-63.3Z" transform="translate(100 100)" />
+                      <path d="M50.1,-63.3C60.7,-50.8,62.2,-31,62,-13.7C61.8,3.7,60,18.6,53.6,32.2C47.2,45.7,36.4,57.8,21.2,67.2C6.1,76.5,-13.3,83.1,-28.7,77.9C-44.2,72.7,-55.8,55.8,-66.6,38C-77.5,20.2,-87.7,1.5,-84.2,-14.3C-80.7,-30,-63.6,-42.7,-47.3,-54.2C-31,-65.6,-15.5,-75.8,2.1,-78.3C19.8,-80.8,39.5,-75.7,50.1,-63.3Z" transform="translate(100 100)" />
                     </mask>
                     <g mask="url(#mask0)">
-                      <path fill="#000000" d="M50.1,-63.3C60.7,-50.8,62.2,-31,62,-13.7C61.8,3.7,60,18.6,53.6,32.2C47.2,45.7,36.4,57.8,21.2,67.2C6.1,76.5,-13.3,83.1,-28.7,77.9C-44.2,72.7,-55.8,55.8,-66.6,38C-77.5,20.2,-87.7,1.5,-84.2,-14.3C-80.7,-30,-63.6,-42.7,-47.3,-54.2C-31,-65.6,-15.5,-75.8,2.1,-78.3C19.8,-80.8,39.5,-75.7,50.1,-63.3Z" transform="translate(100 100)" />
+                      <path d="M50.1,-63.3C60.7,-50.8,62.2,-31,62,-13.7C61.8,3.7,60,18.6,53.6,32.2C47.2,45.7,36.4,57.8,21.2,67.2C6.1,76.5,-13.3,83.1,-28.7,77.9C-44.2,72.7,-55.8,55.8,-66.6,38C-77.5,20.2,-87.7,1.5,-84.2,-14.3C-80.7,-30,-63.6,-42.7,-47.3,-54.2C-31,-65.6,-15.5,-75.8,2.1,-78.3C19.8,-80.8,39.5,-75.7,50.1,-63.3Z" transform="translate(100 100)" />
                     
-                      <image class="home_blob-img" xlink:href="assets/img/Profile_picture-Catherine.png"/>
+                      <image class="home_blob-img" x='35' y='20' xlink:href="assets/img/Profile_picture-Catherine.png"/>
                     </g>
                   </svg>
             </div>
 
             <div class="home_data">
-                <h1 class="home_title">Hi, I am Catherine Kiiru</h1>
-                <h3 class="home_subtitle">Frontend developer</h3>
-                <p class="home_description">Frontend developer with skills in 
-                    Javascript, CSS, HTML</p>
+                <h1 class="home_title">Hi, I'm Catherine </h1>
+                <h3 class="home_subtitle">Frontend Developer | Technical Writer</h3>      
+                <p class="home_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                 <a href="#contact" class="button button--flex">
-                    <i class="las la-paper-plane la-lg nav_icon">Contact me</i>
+                    Contact me
+                    <i class="las la-paper-plane la-lg button_icon"></i>
                 </a>   
             </div>
         </div>
+
+       <div class="home_scroll">
+           <a href="#about" class="home_scroll-button button--flex">
+            <i class="uil uil-mouse-alt home_scroll-mouse"></i>
+            <!--<i class="las la-mouse la-lg home_scroll-mouse"></i> -->
+            <span class="home_scroll-name">Scroll down</span>
+            <i class="las la-arrow-down la-lg home_scroll-arrow"></i>
+           </a>
+       </div>
     </div>
 </section>
 
 <!--=================== ABOUT ===============================-->
+<section class="about section" id="about">
+    <h2 class="section_title">About me</h2>
+    <span class="section_subtitle">My introduction</span>
 
+    <div class="about_container container grid">
+        <img src="assets/img/christopher-gower-m_HRfLhgABo-unsplash.jpg" alt="" class="about_img">
+
+        <div class="about_data">
+            <p class="about_description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            </p>
+
+            <div class="about_info">
+                <div>
+                    <span class="about_info-title">08+</span>
+                    <span class="about_info-name">Years <br> experience</span>
+                </div>
+
+                <div>
+                    <span class="about_info-title">20+</span>
+                    <span class="about_info-name">Completed <br> projects</span>
+                </div>
+
+                <div>
+                    <span class="about_info-title">05+</span>
+                    <span class="about_info-name">Companies <br> worked</span>
+                </div>     
+            </div>
+
+            <div class="about_buttons">
+                
+            </div>
+        </div>
+    </div>
+</section>
 
 <!--=================== SKILLS ===============================-->
 
