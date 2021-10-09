@@ -12,4 +12,4 @@
  <image class="home_blob-img" x='35' y='20' xlink:href="assets/img/Profile_picture-Catherine.png"/>
  ```
 
-
+Next class: start from 50:12 (skills/style.css)
